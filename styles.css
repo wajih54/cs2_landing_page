@@ -1,0 +1,236 @@
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: #1a1a1a;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff6b35;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff6b35;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('https://www.vpesports.com/wp-content/uploads/2024/05/Screenshot_1-184.png') center/cover;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #ff6b35;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #ff6b35;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e55a2b;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+      background: #111;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #ff6b35;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      border: 2px solid #333;
+      transition: border-color 0.3s;
+    }
+
+    .feature-card:hover {
+      border-color: #ff6b35;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      color: #ff6b35;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    /* Screenshots Section */
+    .screenshots {
+      padding: 80px 0;
+      background: #0a0a0a;
+    }
+
+    .screenshots h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #ff6b35;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .screenshot-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .screenshot-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 80px 0;
+      background: linear-gradient(rgba(255,107,53,0.9), rgba(255,107,53,0.9)), 
+                  url('https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_615455299355eaf552c638c7ea5b24a8b46e02dd.1920x1080.jpg') center/cover;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-large {
+      font-size: 1.3rem;
+      padding: 20px 40px;
+      background: #fff;
+      color: #ff6b35;
+      font-weight: bold;
+    }
+
+    .btn-large:hover {
+      background: #f0f0f0;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a1a1a;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ff6b35;
+      text-decoration: none;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+
+      .screenshot-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
